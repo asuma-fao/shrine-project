@@ -1,0 +1,30 @@
+<resources>
+    <string name="shr_app_name">Tracker</string>
+    <string name="shr_hint_username">Username</string>
+    <string name="shr_hint_password">Password</string>
+    <string name="shr_button_next">Next</string>
+    <string name="shr_button_cancel">Cancel</string>
+    <string name="shr_error_password">Password must contain at least 8 characters.</string>
+    <string name="shr_filter_title">Filter</string>
+    <string name="shr_search_title">Search</string>
+    <string name="shr_product_title">Title</string>
+    <string name="shr_product_description">Secondary text</string>
+
+    <!-- Shrine backdrop menu labels -->
+    <string name="shr_featured_label">Home</string>
+    <string name="shr_apartment_label">Eventos</string>
+    <string name="shr_accessories_label">Regatas</string>
+    <string name="shr_shoes_label">Tiempo</string>
+    <string name="shr_tops_label">MiCuenta</string>
+    <string name="shr_bottoms_label">Acerca de ...</string>
+    <string name="shr_dresses_label">Sobre nosotros</string>
+    <string name="shr_account_label">Salir</string>
+    <string name="viento">Temperatura</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="lorem_ipsum">la info de la API</string>
+    <string name="tiempo">tiempo</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="share">Share</string>
+    <string name="like">Like</string>
+    <string name="titulo">titulo</string>
+</resources>

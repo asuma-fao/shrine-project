@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TiempoFragment">
+
+    <LinearLayout
+        style="@style/Widget.Shrine.Backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="88dp">
+
+        <include layout="@layout/shr_backdrop" />
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Widget.Shrine.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/shr_menu"
+            app:title="@string/shr_app_name" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/tiempo_frg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/productGridBackgroundColor1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:elevation="8dp"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="12dp"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@drawable/shr_branded_menu"
+        app:title ="@string/shr_app_name">
+        <!--android:paddingStart="@dimen/shr_product_grid_spacing"-->
+        <!--android:paddingEnd="@dimen/shr_product_grid_spacing"-->
+        <!--esto par el gridlayour hora usamos el straggred-->
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mtrl_card_spacing"
+            android:layout_marginTop="@dimen/mtrl_card_spacing"
+            android:layout_marginRight="@dimen/mtrl_card_spacing"
+            android:minHeight="200dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            <ImageView
+                android:id="@+id/card_header"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sample_image"
+                app:tint="?colorSurface"
+                app:tintMode="multiply"
+               />
+                <TextView
+                    android:id="@+id/card_title_tiempo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tiempo"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    android:alpha="?alphaEmphasisHigh"
+                    android:layout_marginStart="@dimen/keyline_4"
+                    android:firstBaselineToTopHeight="40dp" />
+                <TextView
+                    android:id="@+id/card_overline_ciudad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ciudad"
+                    android:textAppearance="?textAppearanceOverline"
+                    android:alpha="?alphaEmphasisMedium"
+                    android:layout_marginTop="@dimen/keyline_4"
+                    android:layout_marginStart="@dimen/keyline_4"
+                    android:layout_marginLeft="@dimen/keyline_4"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/card_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/keyline_4"
+                    android:layout_marginEnd="@dimen/keyline_5"
+                    android:firstBaselineToTopHeight="@dimen/keyline_5"
+                    android:text="@string/lorem_ipsum"
+                    android:textAppearance="?textAppearanceBody2"
+                    android:alpha="?alphaEmphasisMedium"
+                    android:layout_marginRight="@dimen/keyline_5"
+                    android:layout_marginLeft="@dimen/keyline_4"
+                    tools:ignore="RtlHardcoded" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.Shrine.Button"
+                        android:id="@+id/card_button_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share"
+                        android:layout_marginTop="@dimen/keyline_5"
+                        android:layout_marginBottom="@dimen/keyline_2"
+                        android:layout_marginStart="@dimen/keyline_2"
+                        android:layout_marginEnd="@dimen/keyline_0"
+                        android:layout_marginLeft="@dimen/keyline_2"
+                        android:layout_marginRight="@dimen/keyline_0"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        tools:ignore="RtlHardcoded" />
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:id="@+id/card_button_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/like"
+                        android:layout_marginTop="@dimen/keyline_5"
+                        android:layout_marginBottom="@dimen/keyline_2"
+                        android:layout_marginStart="@dimen/keyline_0"
+                        android:layout_marginEnd="@dimen/keyline_2"
+                        android:layout_marginLeft="@dimen/keyline_0"
+                        android:layout_marginRight="@dimen/keyline_2"
+                        android:layout_toStartOf="@id/card_button_share"
+                        android:layout_toLeftOf="@id/card_button_share"
+                        tools:ignore="RtlHardcoded" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
